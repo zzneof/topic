@@ -1,8 +1,8 @@
 
 {
     "version":1,
-    "status":0,
-    "msg":"暂时停用,具体请看群通知.",
+    "status":1,
+    "msg":"",
     "qqGroupApi":"mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26k%3DMj49xWOy6GfYqoi_s5O85EnTvVvmrCbg",
   "qqNumber":"763860000",
   "qqGroupNumber":"532077356",
