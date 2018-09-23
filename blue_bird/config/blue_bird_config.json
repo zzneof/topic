@@ -1,8 +1,8 @@
 
 {
     "version":2,
-    "status":0,
-    "msg":"官方版已更新，修复了部分接口。暂时停用，开放时间不详。",
+    "status":1,
+    "msg":"请加群下载最新版：蓝鸟X，QQ群：532077356。",
     "qqGroupApi":"mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26k%3DMj49xWOy6GfYqoi_s5O85EnTvVvmrCbg",
   "qqNumber":"763860000",
   "qqGroupNumber":"532077356",
