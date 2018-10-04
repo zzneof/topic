@@ -1,7 +1,7 @@
 
 {
     "version":2,
-    "status":0,
+    "status":1,
     "msg":"题库升级，增加WAF防护系统。不懂的百度，暂停使用！2018年10月02号 22:28:10",
     "qqGroupApi":"mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26k%3DMj49xWOy6GfYqoi_s5O85EnTvVvmrCbg",
   "qqNumber":"",
