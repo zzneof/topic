@@ -1,8 +1,8 @@
 
 {
-    "version":2,
+    "version":3,
     "status":1,
-    "msg":"题库升级，增加WAF防护系统。不懂的百度，暂停使用！2018年10月02号 22:28:10",
+    "msg":"版本更新加群(532077356)下载，修复部分机型闪退，如果还是闪退使用点击 进入网页版。",
     "qqGroupApi":"mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26k%3DMj49xWOy6GfYqoi_s5O85EnTvVvmrCbg",
   "qqNumber":"",
   "qqGroupNumber":"532077356",
