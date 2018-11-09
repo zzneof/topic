@@ -5,58 +5,40 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
     <title>首页</title>
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_912243_c2li4vt43rb.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_912243_8njqy5opv8c.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        html {
-            font-size: 12px;
-        }
-
-        #footer {
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 4rem;
-            border-top: 0.05rem red solid;
-        }
-
-        #footer #nav {
-            display: flex;
-            height: 100%;
-        }
-
-        #footer #nav .nav-item {
-            flex: 1;
-            text-align: center;
-            display: flex;
-            align-items:center;/*垂直居中*/
-            justify-content: center;/*水平居中*/
-            flex-direction: column;
-        }
-    </style>
 </head>
 <body>
-<header id="header">
-
-</header>
-<section id="section">
-
-</section>
-<footer id="footer">
-    <nav id="nav">
-        <div class="nav-item">
-            <div>
+<div id="app">
+    <header id="header">
+        {{curr.title}}
+    </header>
+    <main id="main">
+        <iframe frameborder="no" :src="curr.url" id="frame"></iframe>
+    </main>
+    <footer id="footer">
+        <nav id="nav">
+            <div class="nav-item" :class="{'color-active':curr===home}" @click="greet(home)">
+                <span class="iconfont icon-dibudaohanglan_fangzi_tiaozhuanzhuye"></span>
+                <span>{{home.title}}</span>
+            </div>
+            <div class="nav-item" :class="{'color-active':curr===info}" @click="greet(info)">
+                <span class="iconfont icon-xiangqing"></span>
+                <span>{{info.title}}</span>
+            </div>
+            <div class="nav-item" :class="{'color-active':curr===rank}" @click="greet(rank)">
+                <span class="iconfont icon-ranking"></span>
+                <span>{{rank.title}}</span>
+            </div>
+            <div class="nav-item" :class="{'color-active':curr===my}" @click="greet(my)">
                 <span class="iconfont icon-dibudaohanglan_xiaoren_tiaozhuangerenzhongxin"></span>
+                <span>{{my.title}}</span>
             </div>
-            <div>
-                <span>首页</span>
-            </div>
-        </div>
-        <div class="nav-item">2</div>
-        <div class="nav-item">3</div>
-        <div class="nav-item">4</div>
-    </nav>
-</footer>
+        </nav>
+    </footer>
+</div>
+<script src="js/vue.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/fix-font-szie.js"></script>
 </body>
 </html>
