@@ -1,4 +1,5 @@
 $('section').css('background', 'none').find('.text-login>h1').remove().end().find('.login').css({'float': 'none','margin':':20px auto'});
+$('div.login').css("margin","20px auto");
 $('header').remove();
 $('footer').remove();
 $('.gray').click();
