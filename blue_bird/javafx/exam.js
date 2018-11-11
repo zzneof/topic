@@ -35,6 +35,8 @@ function examFun() {
 function insertDownload(){
     $('#putIn').after(`<a id="downloadTiku" class="f14 rest acenter pater">更 新 题 库</a>`);
     $('#downloadTiku').click(function(){
+        createLoading("正在下载，请稍后...");
+        $(this).remove();
         app.downloadAnswer("https://raw.githubusercontent.com/zzneof/topic/master/blue_bird/javafx/answer");
     });
 }
