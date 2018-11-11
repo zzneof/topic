@@ -7,6 +7,7 @@ function examFun() {
         <div style="cursor: pointer; position: fixed;top: 140px;text-align: center;z-index: 888888888;width: 100%;" onclick="$(this).remove()">
             <h1 style="font-size: 30px;color: red;">红框内为答案，需手动选择！</h1>
         </div>`);
+    insertDownload();
     examList.each(function (i, dom) {
         let src = $(dom).find('div.sec2.grays img').attr("src");
         let topicId = src.substr(src.lastIndexOf("/") + 1, src.lastIndexOf("_") - src.lastIndexOf("/") - 1);
@@ -30,6 +31,12 @@ function examFun() {
         }
     });
     removeLoading();
+}
+function insertDownload(){
+    $('#putIn').after(`<a id="downloadTiku" class="f14 rest acenter pater">更 新 题 库</a>`);
+    $('#downloadTiku').click(function(){
+        app.downloadAnswer("https://raw.githubusercontent.com/zzneof/topic/master/blue_bird/javafx/answer");
+    });
 }
 
 examFun();
