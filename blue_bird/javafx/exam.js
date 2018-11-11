@@ -37,7 +37,9 @@ function insertDownload(){
     $('#downloadTiku').click(function(){
         createLoading("正在下载，请稍后...");
         $(this).remove();
-        app.downloadAnswer("https://raw.githubusercontent.com/zzneof/topic/master/blue_bird/javafx/answer");
+         setTimeout(function () {
+            app.downloadAnswer("https://raw.githubusercontent.com/zzneof/topic/master/blue_bird/javafx/answer");
+        },1500);
     });
 }
 
